@@ -1,0 +1,55 @@
+{% extends 'lab/base.html' %}
+{% load i18n %}
+{% block content %}
+    <div class="content"> 
+        <div class="row">
+            <div class="col-12"> 
+                <table class="table table-striped"> 
+                    <tr>
+                        <td> 
+                            {% trans "Nombre" %}
+                        </td>
+                        <td> 
+                            {% trans "Apellido" %}
+                        </td>
+                        <td> 
+                            {% trans "Edad" %}
+                        </td>
+                        <td> 
+                            {% trans "Direccion" %}
+                        </td>
+                        <td> 
+                            {% trans "Telefono" %}
+                        </td>
+                        <td> 
+                            {% trans "Email" %}
+                        </td>
+                        <td>
+                            {% trans "Acciones" %}
+                        </td>
+                    </tr>
+                    {% if personas %}
+                    {% for persona in personas %}
+                    <tr>
+                        <td> {{persona.nombre}}</td>
+                        <td> {{persona.apellido}} </td>
+                        <td> {{persona.edad}} </td>
+                        <td> {{persona.direccion}} </td>
+                        <td> {{persona.telefono}} </td>
+                        <td> {{persona.email}} </td>
+                        <td> 
+                            <a class="btn btn-primary" href="{% url 'editar' persona.id  %}">{% trans "Editar" %} </a>
+                            <a class="btn btn-danger" href="{% url 'eliminar' persona.id  %}">{% trans "Eliminar" %} </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                    {% else %}
+                    <H2>{% trans "No hay registros" %}</H2>
+                    {% endif %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-20 22:25-0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\lab\templates\lab\agregar.html:6
+msgid "Save"
+msgstr "Save"
+
+#: .\lab\templates\lab\base.html:6
+msgid "Laboratorio 01, ATI II"
+msgstr "Laboratory 01 ATI II"
+
+#: .\lab\templates\lab\base.html:28
+msgid "Inicio"
+msgstr "Start"
+
+#: .\lab\templates\lab\base.html:31
+msgid "Agregar"
+msgstr "add"
+
+#: .\lab\templates\lab\base.html:34
+msgid "Consultar"
+msgstr "Consult"
+
+#: .\lab\templates\lab\base.html:48
+#, fuzzy
+#| msgid "Direccion"
+msgid "Seleccionar"
+msgstr "address"
+
+#: .\lab\templates\lab\bienvenida.html:4
+msgid "Bienvenido!"
+msgstr "Welcome!"
+
+#: .\lab\templates\lab\bienvenida.html:5
+msgid "Laboratorio 01"
+msgstr "Laboratory 01"
+
+#: .\lab\templates\lab\bienvenida.html:7
+msgid "Integrantes:"
+msgstr "Members"
+
+#: .\lab\templates\lab\bienvenida.html:10
+msgid "Kevin Blanco"
+msgstr "Kevin Blanco"
+
+#: .\lab\templates\lab\bienvenida.html:11
+msgid "Jimmy Espino"
+msgstr "Jimmy Espino"
+
+#: .\lab\templates\lab\consultar.html:10
+msgid "Nombre"
+msgstr "Name"
+
+#: .\lab\templates\lab\consultar.html:13
+msgid "Apellido"
+msgstr "Lastname"
+
+#: .\lab\templates\lab\consultar.html:16
+msgid "Edad"
+msgstr "Age"
+
+#: .\lab\templates\lab\consultar.html:19
+msgid "Direccion"
+msgstr "address"
+
+#: .\lab\templates\lab\consultar.html:22
+msgid "Telefono"
+msgstr "phone"
+
+#: .\lab\templates\lab\consultar.html:25
+msgid "Email"
+msgstr "Email"
+
+#: .\lab\templates\lab\consultar.html:28
+msgid "Acciones"
+msgstr "Actions"
+
+#: .\lab\templates\lab\consultar.html:41
+msgid "Editar"
+msgstr "Edit"
+
+#: .\lab\templates\lab\consultar.html:42
+msgid "Eliminar"
+msgstr "Remove"
+
+#: .\lab\templates\lab\consultar.html:48
+msgid "No hay registros"
+msgstr "No records"
+
+#: .\lab\urls.py:7
+#, fuzzy
+#| msgid "Agregar"
+msgid "agregar/"
+msgstr "add/"
+
+#: .\lab\urls.py:8
+#, fuzzy
+#| msgid "Consultar"
+msgid "consultar/"
+msgstr "Consult/"
+
+#: .\lab\urls.py:9
+msgid "eliminar/<int:pk>"
+msgstr "remove/<int:pk>"
+
+#: .\lab\urls.py:10
+msgid "editar/<int:pk>"
+msgstr "edit/<int:pk>"
+
+#: .\laboratorio1\settings.py:126
+msgid "Spanish"
+msgstr "Spanish"
+
+#: .\laboratorio1\settings.py:127
+msgid "English"
+msgstr "English"

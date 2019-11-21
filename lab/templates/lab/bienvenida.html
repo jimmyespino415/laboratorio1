@@ -1,0 +1,13 @@
+{% extends 'lab/base.html' %}
+{% load i18n %}
+{% block content %}
+    {% trans "Bienvenido!" %} </br>
+    {% trans "Laboratorio 01" %} </br>
+
+    {% trans "Integrantes:" %}
+    
+    <ul>
+        <li> {% trans "Kevin Blanco" %}</li>
+        <li> {% trans "Jimmy Espino" %}</li>
+    </ul>
+{% endblock %}
