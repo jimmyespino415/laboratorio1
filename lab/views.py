@@ -38,4 +38,4 @@ def eliminar(request, pk):
     persona = Persona.objects.get(id=pk)
     persona.delete()
 
-    return redirect('/')
+    return redirect('/consultar/')

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-20 22:25-0430\n"
+"POT-Creation-Date: 2019-11-22 22:14-0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\lab\models.py:7
+#| msgid "Nombre"
+msgid "nombre"
+msgstr "Name"
+
+#: .\lab\models.py:8
+#| msgid "Apellido"
+msgid "apellido"
+msgstr "Lastname"
+
+#: .\lab\models.py:9
+msgid "edad"
+msgstr "age"
+
+#: .\lab\models.py:10
+#| msgid "Direccion"
+msgid "direccion"
+msgstr "address"
+
+#: .\lab\models.py:11
+msgid "ingreso_sistema"
+msgstr "system login"
+
+#: .\lab\models.py:13
+#| msgid "Telefono"
+msgid "telefono"
+msgstr "phone"
+
+#: .\lab\models.py:14
+#| msgid "Email"
+msgid "email"
+msgstr "Email"
 
 #: .\lab\templates\lab\agregar.html:6
 msgid "Save"
@@ -38,7 +71,7 @@ msgstr "add"
 msgid "Consultar"
 msgstr "Consult"
 
-#: .\lab\templates\lab\base.html:48
+#: .\lab\templates\lab\base.html:51
 #, fuzzy
 #| msgid "Direccion"
 msgid "Seleccionar"

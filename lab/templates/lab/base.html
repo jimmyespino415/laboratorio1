@@ -35,12 +35,13 @@
                         </li>
                 </ul>
             </div>
+
             <div>
                 <form class="form-inline" action="/i18n/setlang/" method="POST" >
                     {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" /> 
+                    {% get_current_language as LANGUAGE_CODE %}
+                    <input name="next" type="hidden" {% if LANGUAGE_CODE == 'es' %} value="{{ request.get_full_path }}"{% else %} value="{{ request.get_full_path|slice:'3:'  }}" {% endif %} /> 
                     <select class="form-control" name="language">
-                        {% get_current_language as LANGUAGE_CODE %}
                         {% get_available_languages as LANGUAGES %}
                         {% for lang in LANGUAGES %}
                         <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
@@ -51,6 +52,7 @@
                     <input class="btn btn-info" type="submit" value="{%trans "Seleccionar" %}" /> 
                 </form>
             </div>
+
         </nav>
     </header>
 
