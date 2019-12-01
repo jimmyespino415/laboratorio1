@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 class Persona(models.Model):
@@ -10,5 +11,5 @@ class Persona(models.Model):
     direccion = models.TextField(_('direccion'))
     ingreso_sistema = models.DateTimeField(_('ingreso_sistema'),
             default=timezone.now)
-    telefono = models.CharField(_('telefono'), max_length=15)
+    telefono = models.CharField(_('telefono'), help_text'Formato 0212-1234567', max_length=12)
     email = models.EmailField(_('email'))
